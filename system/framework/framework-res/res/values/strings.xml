@@ -45,9 +45,11 @@
     <string name="config_wimaxServiceClassname" />
     <string name="config_wimaxStateTrackerClassname" />
     <string name="config_dreamsDefaultComponent">com.google.android.deskclock/com.android.deskclock.Screensaver</string>
+    <string name="config_deviceDockBatteryHandlerClass" />
     <string name="config_legacyUmsLunFile">/sys/devices/platform/usb_mass_storage/lun0/file</string>
-    <string name="config_deviceKeyHandlerLib" />
+    <string name="config_deviceHandlersLib" />
     <string name="config_deviceKeyHandlerClass" />
+    <string name="config_deviceDockBatteryHandlerLib" />
     <string name="hour_minute_24" formatted="false">%H:%M</string>
     <string name="hour_minute_ampm" formatted="false">%-l:%M%p</string>
     <string name="hour_minute_cap_ampm" formatted="false">%-l:%M%^p</string>
@@ -561,6 +563,10 @@ MMMM d"</string>
     <string name="permdesc_asec_rename">Allows the app to rename internal storage.</string>
     <string name="permlab_vibrate">control vibration</string>
     <string name="permdesc_vibrate">Allows the app to control the vibrator.</string>
+    <string name="permlab_fm_radio_receiver">control FM receiver</string>
+    <string name="permdesc_fm_radio_receiver">Allows the application to control the FM receiver.</string>
+    <string name="permlab_fm_radio_transmitter">control FM transmitter</string>
+    <string name="permdesc_fm_radio_transmitter">Allows the application to control the FM transmitter.</string>
     <string name="permlab_flashlight">control flashlight</string>
     <string name="permdesc_flashlight">Allows the app to control the flashlight.</string>
     <string name="permlab_manageUsb">manage preferences and permissions for USB devices</string>
@@ -1082,7 +1088,7 @@ Do you want to close it?"</string>
     <string name="volume_icon_description_notification">Notification volume</string>
     <string name="ringtone_default">Default ringtone</string>
     <string name="ringtone_default_with_actual">Default ringtone (%1$s)</string>
-    <string name="ringtone_silent">Silent</string>
+    <string name="ringtone_silent">None</string>
     <string name="ringtone_picker_title">Ringtones</string>
     <string name="ringtone_unknown">Unknown ringtone</string>
     <string name="wifi_available_sign_in">Sign into Wi-Fi network</string>

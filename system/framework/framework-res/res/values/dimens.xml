@@ -88,7 +88,7 @@
     <dimen name="notification_text_size">14.0dip</dimen>
     <dimen name="notification_title_text_size">18.0dip</dimen>
     <dimen name="notification_subtext_size">12.0dip</dimen>
-    <dimen name="lockscreen_target_inset">25.0dip</dimen>
+    <dimen name="lockscreen_target_inset">30.0dip</dimen>
     <dimen name="kg_security_panel_height">600.0dip</dimen>
     <dimen name="kg_security_view_height">480.0dip</dimen>
     <dimen name="kg_widget_view_width">0.0dip</dimen>

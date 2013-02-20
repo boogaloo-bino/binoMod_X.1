@@ -453,7 +453,6 @@ Try again or call customer service for more options."</string>
     <string name="alert_dialog_yes">Yes</string>
     <string name="alert_dialog_no">No</string>
     <string name="alert_dialog_dismiss">Dismiss</string>
-    <string name="absent_num">ABSENT NUMBER</string>
     <string name="voicemail_provider">Service</string>
     <string name="voicemail_settings">Setup</string>
     <string name="voicemail_number_not_set">&lt;Not set></string>
@@ -584,12 +583,13 @@ Try again or call customer service for more options."</string>
     <string name="description_target_decline">Decline</string>
     <string name="voicemail_notification_vibrate_when_title">Vibrate</string>
     <string name="voicemail_notification_vibarte_when_dialog_title">Vibrate</string>
-    <string name="voicemail_notification_ringtone_title">Ringtone</string>
+    <string name="voicemail_notification_ringtone_title">Sound</string>
+    <string name="default_notification_description">Default sound (%1$s)</string>
     <string name="voicemail_notification_vibrate_when_default">never</string>
     <string name="ringtone_title">Phone ringtone</string>
     <string name="vibrate_on_ring_title">Vibrate when ringing</string>
     <string name="dtmf_tone_enable_title">Dial pad touch tones</string>
-    <string name="preference_category_ringtone">Ringtone</string>
+    <string name="preference_category_ringtone">Ringtone &amp; Vibrate</string>
     <string name="noise_suppression_title">Noise suppression</string>
     <string name="noise_suppression_summary">Enable noise suppression for calls</string>
     <string name="advanced_setting">Advanced Settings</string>
@@ -605,4 +605,7 @@ Try again or call customer service for more options."</string>
     <string name="national_roaming_disable">Connect to data services when nationally roaming</string>
     <string name="perm_change_mobile_network">Change network (2G/3G)</string>
     <string name="perm_change_mobile_network_desc">Application with this permission can, at any time, change between 2G data and 3G data. 3G is faster, consumes more battery, and can also cost you more money.</string>
+    <string name="flip_action_title">Flip action</string>
+    <string name="flip_action_dialog_title">Flip device to…</string>
+    <string name="flip_action_summary">Flipping the phone down will %s</string>
 </resources>

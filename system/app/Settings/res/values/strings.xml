@@ -9,8 +9,9 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="create">Create</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
     <string name="device_info_default">Unknown</string>
-    <string name="show_dev_countdown">You are now %1$d steps away from enabling development settings.</string>
     <string name="show_dev_on">You have enabled development settings!</string>
     <string name="show_dev_already">No need, you have already enabled development settings.</string>
     <string name="header_category_wireless_networks">WIRELESS &amp; NETWORKS</string>
@@ -93,14 +94,11 @@
     <string name="battery_info_health_unspecified_failure">Unknown error</string>
     <string name="battery_info_health_cold">Cold</string>
     <string name="bluetooth">Bluetooth</string>
-    <string name="bluetooth_visibility">Discoverable</string>
     <string name="bluetooth_is_discoverable">Visible to all nearby Bluetooth devices (%1$s)</string>
     <string name="bluetooth_is_discoverable_always">Visible to all nearby Bluetooth devices</string>
     <string name="bluetooth_not_visible_to_other_devices">Not visible to other Bluetooth devices</string>
     <string name="bluetooth_only_visible_to_paired_devices">Only visible to paired devices</string>
-    <string name="bluetooth_not_discoverable">Make device discoverable</string>
     <string name="bluetooth_visibility_timeout">Visibility timeout</string>
-    <string name="bluetooth_visibility_timeout_summary">Set how long device will be discoverable</string>
     <string name="bluetooth_lock_voice_dialing">Lock voice dialing</string>
     <string name="bluetooth_lock_voice_dialing_summary">Prevent use of the bluetooth dialer when the screen is locked</string>
     <string name="bluetooth_devices">Bluetooth devices</string>
@@ -133,11 +131,11 @@
     <string name="bluetooth_show_received_files">Show received files</string>
     <string name="device_picker">Bluetooth device chooser</string>
     <string name="bluetooth_permission_request">Bluetooth permission request</string>
-    <string name="bluetooth_ask_enablement">An app wants to turn on Bluetooth. Allow?</string>
-    <string name="bluetooth_ask_discovery">An app on your phone wants to make your phone discoverable by other Bluetooth devices for %1$d seconds. Allow?</string>
-    <string name="bluetooth_ask_lasting_discovery">An app on your phone wants to make your phone “always discoverable” by other Bluetooth devices. Allow?</string>
-    <string name="bluetooth_ask_enablement_and_discovery">An app on your phone wants to turn on Bluetooth and make your phone discoverable by other devices for %1$d seconds. Allow?</string>
-    <string name="bluetooth_ask_enablement_and_lasting_discovery">An app on your phone wants to turn on Bluetooth and make your phone discoverable by other devices. Allow?</string>
+    <string name="bluetooth_ask_enablement">An app wants to turn on Bluetooth.</string>
+    <string name="bluetooth_ask_discovery">An app wants to make your phone visible to other Bluetooth devices for %1$d seconds.</string>
+    <string name="bluetooth_ask_lasting_discovery">An app wants to make your phone visible to other Bluetooth devices. You can change this later in Bluetooth settings.</string>
+    <string name="bluetooth_ask_enablement_and_discovery">An app wants to turn on Bluetooth and make your phone visible to other devices for %1$d seconds.</string>
+    <string name="bluetooth_ask_enablement_and_lasting_discovery">An app wants to turn on Bluetooth and make your phone visible to other devices. You can change this later in Bluetooth settings.</string>
     <string name="bluetooth_turning_on">Turning Bluetooth on…</string>
     <string name="bluetooth_turning_off">Turning Bluetooth off…</string>
     <string name="bluetooth_auto_connect">Auto-connect</string>
@@ -670,11 +668,11 @@ Phone setup can require significant network activity."</string>
     <string name="musicfx_title">Music effects</string>
     <string name="ring_volume_title">Ringer volume</string>
     <string name="vibrate_in_silent_title">Vibrate when silent</string>
-    <string name="notification_sound_title">Default notification</string>
+    <string name="notification_sound_title">Default notification sound</string>
     <string name="incoming_call_volume_title">Ringtone</string>
     <string name="notification_volume_title">Notification</string>
     <string name="checkbox_notification_same_as_incoming_call">Use incoming call volume for notifications</string>
-    <string name="notification_sound_dialog_title">Choose notification ringtone</string>
+    <string name="notification_sound_dialog_title">Default notification sound</string>
     <string name="media_volume_title">Media</string>
     <string name="media_volume_summary">Set volume for music and videos</string>
     <string name="alarm_volume_title">Alarm</string>
@@ -781,6 +779,7 @@ Possibly incorrect PIN."</string>
     <string name="status_meid_number">MEID</string>
     <string name="status_icc_id">ICCID</string>
     <string name="status_network_type">Mobile network type</string>
+    <string name="status_latest_area_info">Operator info</string>
     <string name="status_data_state">Mobile network state</string>
     <string name="status_service_state">Service state</string>
     <string name="status_signal_strength">Signal strength</string>
@@ -980,7 +979,7 @@ To clear music, pictures, and other user data, the "<b>USB storage</b> needs to 
     <string name="lockpattern_need_to_unlock_footer" />
     <string name="lockpattern_need_to_unlock_wrong">Try again:</string>
     <string name="lockpattern_need_to_unlock_wrong_footer" />
-    <string name="lockpattern_recording_intro_header">Draw an unlock pattern</string>
+    <string name="lockpattern_recording_intro_header">Draw an unlock pattern:</string>
     <string name="lockpattern_recording_intro_footer">Press Menu for help.</string>
     <string name="lockpattern_recording_inprogress">Release finger when done.</string>
     <string name="lockpattern_recording_incorrect_too_short">Connect at least %d dots. Try again:</string>
@@ -1003,12 +1002,6 @@ To clear music, pictures, and other user data, the "<b>USB storage</b> needs to 
     <string name="lockpattern_too_many_failed_confirmation_attempts_header">Too many incorrect attempts!</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer">Try again in %d seconds.</string>
     <string name="activity_not_found">Application is not installed on your phone.</string>
-    <string name="skip_button_label">Cancel</string>
-    <string name="next_button_label">Next</string>
-    <string name="lock_title">Securing your phone</string>
-    <string name="lock_intro_message">"Protect your phone from unauthorized use by creating a personal screen unlock pattern. Slide your finger to connect at least four dots in any order on the next screen. 
-
-Ready to start? Touch Next."</string>
     <string name="manageapplications_settings_title">Manage apps</string>
     <string name="manageapplications_settings_summary">Manage and remove installed apps</string>
     <string name="applications_settings">Apps</string>
@@ -1172,7 +1165,6 @@ Ready to start? Touch Next."</string>
     <string name="hardkeyboard_category">Physical keyboard settings</string>
     <string name="auto_punctuate_summary">Press Space key twice to insert \".\"</string>
     <string name="show_password">Make passwords visible</string>
-    <string name="show_password_summary" />
     <string name="ime_security_warning">This input method may be able to collect all the text you type, including personal data like passwords and credit card numbers. It comes from the app %1$s. Use this input method?</string>
     <string name="spellchecker_security_warning">This spell checker may be able to collect all the text you type, including personal data like passwords and credit card numbers. It comes from the app %1$s. Use this spell checker?</string>
     <string name="spellchecker_quick_settings">Settings</string>
@@ -1879,6 +1871,8 @@ Any user can accept updated app permissions on behalf of all other users."</stri
     <string name="quiet_hours_active_to">to</string>
     <string name="start_time_title">Start</string>
     <string name="end_time_title">End</string>
+    <string name="notification_convert_sound_to_vibration_title">Vibrate on notification</string>
+    <string name="notification_convert_sound_to_vibration_summary">In vibrate mode, all notifications will vibrate regardless of individual app settings</string>
     <string name="device_hostname">Device hostname</string>
     <string name="mod_version">CyanogenMod version</string>
     <string name="mod_version_default">Unknown</string>
@@ -2170,7 +2164,6 @@ As the start volume is set higher than the ringer volume, the ring tone will be 
     <string name="volume_overlay_title">Volume panel style</string>
     <string name="volbtn_music_controls_title">Volume rocker music controls</string>
     <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
-    <string name="headset_connect_player_title">Launch music app on connect</string>
     <string name="volume_ring_only_description">Ringtone</string>
     <string name="ring_mode_title">Ring mode</string>
     <string name="ring_mode_normal">Normal</string>
@@ -2276,6 +2269,9 @@ As the start volume is set higher than the ringer volume, the ring tone will be 
     <string name="power_menu_reboot_title">Reboot menu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_expanded_desktop">Expanded desktop</string>
+    <string name="expanded_desktop_disabled">Disabled</string>
+    <string name="expanded_desktop_status_bar">Status bar visible</string>
+    <string name="expanded_desktop_no_status_bar">Status bar hidden</string>
     <string name="power_menu_profiles_title">Profile switcher</string>
     <string name="power_menu_airplane_title">Airplane mode</string>
     <string name="power_menu_user_title">User switcher</string>
@@ -2359,6 +2355,7 @@ Do you really want to enable this function?"</string>
     <string name="title_tile_nfc">NFC</string>
     <string name="title_tile_screen_timeout">Screen timeout</string>
     <string name="title_tile_usb_tether">USB Tether</string>
+    <string name="title_tile_quiet_hours">Quiet hours</string>
     <string name="title_dynamic_tiles">Dynamic tiles</string>
     <string name="dynamic_tiles_note_title">Note</string>
     <string name="dynamic_tiles_note_summary">Dynamic tiles are not always visible and will only show up if triggered by a system event</string>
@@ -2387,10 +2384,10 @@ Do you really want to enable this function?"</string>
     <string name="pref_wifi_disable_hdcp_summary">"Try this option if you can connect but don't get any output"</string>
     <string name="app_security_title">App security</string>
     <string name="sms_security_check_limit_title">SMS message limit</string>
-    <string name="sms_security_check_limit_summary">Display an alert dialog to prevent applications from sending SMS messages too frequently. Current limit: %d messages in 15 minutes</string>
+    <string name="sms_security_check_limit_summary">Apps can send %d messages in 30 minutes before requiring confirmation</string>
     <string name="sms_security_check_limit_default">30 (Default)</string>
     <string name="lock_clock_title">Clock widget</string>
-    <string name="lock_clock_summary">"View or change how the 'Chronus' Home and Lock screen widgets will display"</string>
+    <string name="lock_clock_summary">"View or change how the 'cLock' Home and Lock screen widgets will display"</string>
     <string name="stylus_icon_enabled_title">Show icon when using stylus</string>
     <string name="stylus_icon_enabled_summary">Show the pointer icon when hovering or drawing with the stylus</string>
     <string name="lockscreen_maximize_widgets_title">Maximize widgets</string>
@@ -2402,4 +2399,30 @@ Do you really want to enable this function?"</string>
     <string name="lockscreen_background_color_fill">Color fill</string>
     <string name="lockscreen_background_custom_image">Custom image</string>
     <string name="lockscreen_background_default_wallpaper">Default wallpaper</string>
+    <string name="headset_connect_player_title">Launch music app</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+    <string name="safe_headset_volume_title">Safe headset volume</string>
+    <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
+    <string name="cyanogenmod_waiver_title">Waiver</string>
+    <string name="cyanogenmod_waiver_body">"Changing this setting may be against your state or government laws.
+
+In selecting 'OK' below, you acknowledge this warning and waive, indemnify and hold harmless CyanogenMod and its contributors from all legal liabilities."</string>
+    <string name="light_sensor_current_value">Current light sensor value: %d lux</string>
+    <string name="auto_brightness_dialog_title">Automatic brightness levels</string>
+    <string name="auto_brightness_level_format">"%1$s -
+%2$s lux"</string>
+    <string name="auto_brightness_brightness_format">%s%%</string>
+    <string name="auto_brightness_adjust_button">Adjust</string>
+    <string name="auto_brightness_reset_button">Reset</string>
+    <string name="auto_brightness_lux_dialog_title">Ambient brightness range</string>
+    <string name="auto_brightness_split_dialog_title">Split brightness level</string>
+    <string name="auto_brightness_start_lux">Range start (lux)</string>
+    <string name="auto_brightness_end_lux">Range end (lux)</string>
+    <string name="auto_brightness_reset_dialog_title">Reset levels?</string>
+    <string name="auto_brightness_reset_confirmation">All brightness levels will be reset to their default settings.</string>
+    <string name="auto_brightness_split_lux_format">Split position (between %1$d and %2$d lux)</string>
+    <string name="auto_brightness_level_options">Light level options</string>
+    <string name="auto_brightness_menu_edit_lux">Ambient brightness range</string>
+    <string name="auto_brightness_menu_split">Split</string>
+    <string name="auto_brightness_menu_remove">Remove</string>
 </resources>

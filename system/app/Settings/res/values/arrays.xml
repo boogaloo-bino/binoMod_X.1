@@ -606,7 +606,7 @@
         <item>@string/icon_picker_search</item>
         <item>@string/icon_picker_twitter</item>
     </string-array>
-    <array name="lockscreen_icon_picker_icons">
+    <string-array name="lockscreen_icon_picker_icons">
         <item>@*android:drawable/ic_lockscreen_alarm_normal</item>
         <item>@*android:drawable/ic_lockscreen_browser_normal</item>
         <item>@*android:drawable/ic_lockscreen_calendar_normal</item>
@@ -629,7 +629,7 @@
         <item>@*android:drawable/ic_lockscreen_rss_normal</item>
         <item>@*android:drawable/ic_lockscreen_google_normal</item>
         <item>@*android:drawable/ic_lockscreen_twitter_normal</item>
-    </array>
+    </string-array>
     <string-array name="profile_entries">
         <item>On</item>
         <item>Off</item>
@@ -857,6 +857,16 @@
         <item>0</item>
         <item>1</item>
     </string-array>
+    <string-array name="expanded_desktop_entries">
+        <item>@string/expanded_desktop_disabled</item>
+        <item>@string/expanded_desktop_status_bar</item>
+        <item>@string/expanded_desktop_no_status_bar</item>
+    </string-array>
+    <string-array name="expanded_desktop_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
     <string-array name="quick_pulldown_entries">
         <item>@string/quick_pulldown_off</item>
         <item>@string/quick_pulldown_right</item>
@@ -867,17 +877,19 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-    <array name="sms_security_check_limit_entries">
+    <string-array name="sms_security_check_limit_entries">
         <item>@string/sms_security_check_limit_default</item>
         <item>50</item>
         <item>100</item>
         <item>200</item>
-    </array>
+        <item>500</item>
+    </string-array>
     <string-array name="sms_security_check_limit_values">
         <item>30</item>
         <item>50</item>
         <item>100</item>
         <item>200</item>
+        <item>500</item>
     </string-array>
     <string-array name="lockscreen_background_entries">
         <item>@string/lockscreen_background_color_fill</item>

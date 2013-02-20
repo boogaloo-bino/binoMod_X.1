@@ -163,34 +163,34 @@
     .parameter "view"
 
     .prologue
-    .line 1752
+    .line 1778
     invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityEvent;->getText()Ljava/util/List;
 
     move-result-object v0
 
-    .line 1753
+    .line 1779
     .local v0, eventText:Ljava/util/List;,"Ljava/util/List<Ljava/lang/CharSequence;>;"
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
 
-    .line 1754
+    .line 1780
     .local v1, size:I
     invoke-virtual {p2, p1}, Landroid/view/View;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
 
-    .line 1756
+    .line 1782
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
 
     if-ne v1, v2, :cond_0
 
-    .line 1757
+    .line 1783
     const/4 v2, 0x0
 
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1759
+    .line 1785
     :cond_0
     return-void
 .end method
@@ -1396,24 +1396,24 @@
     .parameter
 
     .prologue
-    .line 1633
+    .line 1659
     invoke-interface {p2}, Lcom/android/internal/telephony/Phone;->getLine1Number()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1635
+    .line 1661
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 1636
+    .line 1662
     invoke-static {v0}, Landroid/telephony/PhoneNumberUtils;->formatNumber(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1640
+    .line 1666
     :goto_0
     const v1, 0x7f0c0154
 
@@ -1421,7 +1421,7 @@
 
     move-result-object v1
 
-    .line 1641
+    .line 1667
     const/4 v2, 0x1
 
     new-array v2, v2, [Ljava/lang/Object;
@@ -1436,7 +1436,7 @@
 
     return-object v0
 
-    .line 1638
+    .line 1664
     :cond_0
     const v0, 0x7f0c0005
 
@@ -1550,32 +1550,32 @@
     .parameter "ci"
 
     .prologue
-    .line 1592
+    .line 1618
     if-eqz p1, :cond_1
 
     iget-boolean v0, p1, Lcom/android/internal/telephony/CallerInfo;->isCachedPhotoCurrent:Z
 
     if-eqz v0, :cond_1
 
-    .line 1593
+    .line 1619
     iget-object v0, p1, Lcom/android/internal/telephony/CallerInfo;->cachedPhoto:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
-    .line 1594
+    .line 1620
     iget-object v0, p1, Lcom/android/internal/telephony/CallerInfo;->cachedPhoto:Landroid/graphics/drawable/Drawable;
 
     invoke-static {p0, v0}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V
 
-    .line 1598
+    .line 1624
     :goto_0
     const/4 v0, 0x1
 
-    .line 1600
+    .line 1626
     :goto_1
     return v0
 
-    .line 1596
+    .line 1622
     :cond_0
     const v0, 0x7f020053
 
@@ -1583,7 +1583,7 @@
 
     goto :goto_0
 
-    .line 1600
+    .line 1626
     :cond_1
     const/4 v0, 0x0
 
@@ -1596,7 +1596,7 @@
     .parameter "resource"
 
     .prologue
-    .line 1605
+    .line 1631
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1611,7 +1611,7 @@
 
     invoke-static {p0, v0}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V
 
-    .line 1606
+    .line 1632
     return-void
 .end method
 
@@ -1621,7 +1621,7 @@
     .parameter "bitmap"
 
     .prologue
-    .line 1609
+    .line 1635
     new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
@@ -1636,7 +1636,7 @@
 
     invoke-static {p0, v0}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V
 
-    .line 1610
+    .line 1636
     return-void
 .end method
 
@@ -1646,7 +1646,7 @@
     .parameter "drawable"
 
     .prologue
-    .line 1614
+    .line 1640
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1655,7 +1655,7 @@
 
     move-result-object v1
 
-    .line 1615
+    .line 1641
     .local v1, res:Landroid/content/res/Resources;
     invoke-virtual {p0}, Landroid/widget/ImageView;->getTag()Ljava/lang/Object;
 
@@ -1663,28 +1663,28 @@
 
     check-cast v0, Landroid/graphics/drawable/Drawable;
 
-    .line 1617
+    .line 1643
     .local v0, current:Landroid/graphics/drawable/Drawable;
     if-nez v0, :cond_0
 
-    .line 1619
+    .line 1645
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 1620
+    .line 1646
     invoke-static {p0}, Lcom/android/phone/AnimationUtils$Fade;->show(Landroid/view/View;)V
 
-    .line 1621
+    .line 1647
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
-    .line 1626
+    .line 1652
     :goto_0
     return-void
 
-    .line 1623
+    .line 1649
     :cond_0
     invoke-static {p0, v0, p1}, Lcom/android/phone/AnimationUtils;->startCrossFade(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 1624
+    .line 1650
     const/4 v2, 0x0
 
     invoke-virtual {p0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
@@ -2072,7 +2072,7 @@
     .line 859
     iget-object v9, p0, Lcom/android/phone/CallCard;->mProviderLabel:Landroid/widget/TextView;
 
-    const v10, 0x7f0c01bf
+    const v10, 0x7f0c01be
 
     const/4 v11, 0x1
 
@@ -2448,7 +2448,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1655
+    .line 1681
     if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Lcom/android/internal/telephony/Call;->getPhone()Lcom/android/internal/telephony/Phone;
@@ -2459,42 +2459,42 @@
 
     move-result v0
 
-    .line 1657
+    .line 1683
     :goto_0
     const/4 v2, 0x3
 
     if-ne v0, v2, :cond_1
 
-    .line 1658
+    .line 1684
     iget-object v0, p0, Lcom/android/phone/CallCard;->mCallTypeLabel:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1659
+    .line 1685
     iget-object v0, p0, Lcom/android/phone/CallCard;->mCallTypeLabel:Landroid/widget/TextView;
 
     const v1, 0x7f0c0182
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 1660
+    .line 1686
     iget-object v0, p0, Lcom/android/phone/CallCard;->mCallTypeLabel:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/android/phone/CallCard;->mTextColorCallTypeSip:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 1672
+    .line 1698
     :goto_1
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 1655
+    .line 1681
     goto :goto_0
 
-    .line 1665
+    .line 1691
     :cond_1
     if-eqz p1, :cond_2
 
@@ -2508,19 +2508,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 1666
+    .line 1692
     iget-object v0, p0, Lcom/android/phone/CallCard;->mCallTypeLabel:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1667
+    .line 1693
     iget-object v0, p0, Lcom/android/phone/CallCard;->mCallTypeLabel:Landroid/widget/TextView;
 
     const v1, 0x7f0c0183
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 1668
+    .line 1694
     iget-object v0, p0, Lcom/android/phone/CallCard;->mCallTypeLabel:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/android/phone/CallCard;->mTextColorDefault:I
@@ -2529,7 +2529,7 @@
 
     goto :goto_1
 
-    .line 1670
+    .line 1696
     :cond_2
     iget-object v0, p0, Lcom/android/phone/CallCard;->mCallTypeLabel:Landroid/widget/TextView;
 
@@ -2547,7 +2547,7 @@
     .prologue
     const/16 v2, 0x8
 
-    .line 1409
+    .line 1435
     invoke-virtual {p1}, Lcom/android/internal/telephony/Call;->getPhone()Lcom/android/internal/telephony/Phone;
 
     move-result-object v0
@@ -2556,26 +2556,26 @@
 
     move-result v0
 
-    .line 1410
+    .line 1436
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_0
 
-    .line 1417
+    .line 1443
     iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
 
     const v1, 0x7f020050
 
     invoke-static {v0, v1}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;I)V
 
-    .line 1418
+    .line 1444
     iget-object v0, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
 
     const v1, 0x7f0c0153
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 1431
+    .line 1457
     :goto_0
     iget-object v0, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
 
@@ -2583,23 +2583,23 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1437
+    .line 1463
     iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1438
+    .line 1464
     iget-object v0, p0, Lcom/android/phone/CallCard;->mLabel:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1441
+    .line 1467
     invoke-direct {p0, p1}, Lcom/android/phone/CallCard;->updateCallTypeLabel(Lcom/android/internal/telephony/Call;)V
 
-    .line 1453
+    .line 1479
     return-void
 
-    .line 1419
+    .line 1445
     :cond_0
     const/4 v1, 0x1
 
@@ -2609,7 +2609,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 1425
+    .line 1451
     :cond_1
     iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
 
@@ -2617,7 +2617,7 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;I)V
 
-    .line 1426
+    .line 1452
     iget-object v0, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
 
     const v1, 0x7f0c014d
@@ -2626,7 +2626,7 @@
 
     goto :goto_0
 
-    .line 1428
+    .line 1454
     :cond_2
     new-instance v1, Ljava/lang/IllegalStateException;
 
@@ -2674,57 +2674,60 @@
 
     invoke-virtual {v0, v1}, Lcom/android/phone/ContactsAsyncHelper$ImageTracker;->setPhotoState(I)V
 
-    .line 1214
-    const/4 v2, 0x0
+    .line 1213
+    const/4 v3, 0x0
 
     .line 1215
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
     .line 1216
+    const/4 v1, 0x0
+
+    .line 1217
     const/4 v0, 0x0
 
-    .line 1220
-    if-eqz p1, :cond_8
-
-    .line 1243
-    iget-object v0, p1, Lcom/android/internal/telephony/CallerInfo;->phoneNumber:Ljava/lang/String;
+    .line 1221
+    if-eqz p1, :cond_d
 
     .line 1244
-    if-eqz v0, :cond_0
-
-    const-string v3, "sip:"
-
-    invoke-virtual {v0, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
+    iget-object v0, p1, Lcom/android/internal/telephony/CallerInfo;->phoneNumber:Ljava/lang/String;
 
     .line 1245
-    const/4 v3, 0x4
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v0, v3}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    const-string v4, "sip:"
+
+    invoke-virtual {v0, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    .line 1246
+    const/4 v4, 0x4
+
+    invoke-virtual {v0, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1248
+    .line 1249
     :cond_0
-    iget-object v3, p1, Lcom/android/internal/telephony/CallerInfo;->name:Ljava/lang/String;
+    iget-object v4, p1, Lcom/android/internal/telephony/CallerInfo;->name:Ljava/lang/String;
 
-    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_6
+    if-eqz v4, :cond_b
 
-    .line 1254
+    .line 1255
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_3
+    if-eqz v4, :cond_8
 
-    .line 1257
+    .line 1258
     invoke-virtual {p0}, Lcom/android/phone/CallCard;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -2741,114 +2744,127 @@
 
     move-object v0, v7
 
-    .line 1311
+    .line 1313
     :goto_0
-    sget-object v3, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v4, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
 
-    iget-wide v4, p1, Lcom/android/internal/telephony/CallerInfo;->person_id:J
+    iget-wide v5, p1, Lcom/android/internal/telephony/CallerInfo;->person_id:J
 
-    invoke-static {v3, v4, v5}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
+    invoke-static {v4, v5, v6}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
-    move-result-object v3
+    move-result-object v4
 
-    move-object v7, v3
+    move-object v5, v2
 
-    move-object v3, v2
+    move-object v2, v4
 
-    move-object v2, v1
+    move-object v4, v1
 
-    move-object v1, v0
+    move v1, v3
 
-    move-object v0, v7
+    move-object v3, v0
 
-    .line 1318
+    .line 1320
     :goto_1
-    invoke-virtual {p4}, Lcom/android/internal/telephony/Call;->isGeneric()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_9
-
-    .line 1319
-    iget-object v3, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
-
-    const v4, 0x7f0c0153
-
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
+    const/4 v0, 0x1
 
     .line 1323
-    :goto_2
-    iget-object v3, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
+    if-eqz v1, :cond_4
 
-    const/4 v4, 0x0
+    .line 1328
+    const/4 v1, 0x0
 
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setVisibility(I)V
+    .line 1329
+    iget-object v6, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
 
-    .line 1335
-    if-eqz p3, :cond_a
+    invoke-virtual {v6}, Landroid/widget/TextView;->getVisibility()I
 
-    if-eqz p1, :cond_1
+    move-result v6
 
-    iget-boolean v3, p1, Lcom/android/internal/telephony/CallerInfo;->isCachedPhotoCurrent:Z
+    if-nez v6, :cond_1
 
-    if-nez v3, :cond_a
+    .line 1330
+    iget-object v1, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
 
-    .line 1336
+    invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 1332
     :cond_1
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+    if-eqz v1, :cond_2
 
-    const/4 v3, 0x0
+    invoke-static {v1, v5}, Landroid/telephony/PhoneNumberUtils;->compare(Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
+    move-result v1
 
-    .line 1337
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+    if-nez v1, :cond_3
 
-    const/4 v3, 0x4
-
-    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 1374
     :cond_2
-    :goto_3
-    invoke-virtual {p4}, Lcom/android/internal/telephony/Call;->getState()Lcom/android/internal/telephony/Call$State;
+    iget-object v1, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
 
-    move-result-object v0
+    invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
-    sget-object v3, Lcom/android/internal/telephony/Call$State;->HOLDING:Lcom/android/internal/telephony/Call$State;
+    move-result-object v1
 
-    if-ne v0, v3, :cond_d
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    .line 1375
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhotoDimEffect:Landroid/view/View;
+    move-result-object v1
 
-    invoke-static {v0}, Lcom/android/phone/AnimationUtils$Fade;->show(Landroid/view/View;)V
+    invoke-static {v1, v5}, Landroid/telephony/PhoneNumberUtils;->compare(Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 1380
-    :goto_4
-    if-eqz v2, :cond_e
+    move-result v1
 
+    if-eqz v1, :cond_4
+
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    iget-object v6, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
+
+    invoke-virtual {v6}, Landroid/widget/TextView;->length()I
+
+    move-result v6
+
+    if-ge v1, v6, :cond_4
+
+    .line 1338
+    :cond_3
+    const/4 v0, 0x0
+
+    .line 1342
+    :cond_4
+    if-eqz v0, :cond_5
+
+    .line 1343
     invoke-virtual {p4}, Lcom/android/internal/telephony/Call;->isGeneric()Z
 
     move-result v0
 
-    if-nez v0, :cond_e
+    if-eqz v0, :cond_e
 
-    .line 1381
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
+    .line 1344
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    const v1, 0x7f0c0153
 
-    .line 1382
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    const/4 v2, 0x0
+    .line 1348
+    :goto_2
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+    const/4 v1, 0x0
 
-    .line 1387
-    :goto_5
-    if-eqz v1, :cond_f
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 1350
+    if-eqz v4, :cond_f
 
     invoke-virtual {p4}, Lcom/android/internal/telephony/Call;->isGeneric()Z
 
@@ -2856,34 +2872,98 @@
 
     if-nez v0, :cond_f
 
-    .line 1388
+    .line 1351
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
+
+    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 1352
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 1357
+    :goto_3
+    if-eqz v3, :cond_10
+
+    invoke-virtual {p4}, Lcom/android/internal/telephony/Call;->isGeneric()Z
+
+    move-result v0
+
+    if-nez v0, :cond_10
+
+    .line 1358
     iget-object v0, p0, Lcom/android/phone/CallCard;->mLabel:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1389
+    .line 1359
     iget-object v0, p0, Lcom/android/phone/CallCard;->mLabel:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1395
+    .line 1375
+    :cond_5
+    :goto_4
+    if-eqz p3, :cond_11
+
+    if-eqz p1, :cond_6
+
+    iget-boolean v0, p1, Lcom/android/internal/telephony/CallerInfo;->isCachedPhotoCurrent:Z
+
+    if-nez v0, :cond_11
+
+    .line 1376
+    :cond_6
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
+
+    .line 1377
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 1414
+    :cond_7
+    :goto_5
+    invoke-virtual {p4}, Lcom/android/internal/telephony/Call;->getState()Lcom/android/internal/telephony/Call$State;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/android/internal/telephony/Call$State;->HOLDING:Lcom/android/internal/telephony/Call$State;
+
+    if-ne v0, v1, :cond_14
+
+    .line 1415
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhotoDimEffect:Landroid/view/View;
+
+    invoke-static {v0}, Lcom/android/phone/AnimationUtils$Fade;->show(Landroid/view/View;)V
+
+    .line 1421
     :goto_6
     invoke-direct {p0, p4}, Lcom/android/phone/CallCard;->updateCallTypeLabel(Lcom/android/internal/telephony/Call;)V
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallCard;->setGeoDescription(Lcom/android/internal/telephony/CallerInfo;)V
 
-    .line 1397
+    .line 1423
     return-void
 
-    .line 1259
-    :cond_3
-    sget v3, Lcom/android/internal/telephony/PhoneConstants;->PRESENTATION_ALLOWED:I
+    .line 1260
+    :cond_8
+    sget v4, Lcom/android/internal/telephony/PhoneConstants;->PRESENTATION_ALLOWED:I
 
-    if-eq p2, v3, :cond_4
+    if-eq p2, v4, :cond_9
 
-    .line 1263
+    .line 1264
     invoke-virtual {p0}, Lcom/android/phone/CallCard;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -2900,25 +2980,25 @@
 
     move-object v0, v7
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 1265
-    :cond_4
-    iget-object v3, p1, Lcom/android/internal/telephony/CallerInfo;->cnapName:Ljava/lang/String;
+    .line 1266
+    :cond_9
+    iget-object v4, p1, Lcom/android/internal/telephony/CallerInfo;->cnapName:Ljava/lang/String;
 
-    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v3
+    move-result v4
 
-    if-nez v3, :cond_5
-
-    .line 1267
-    iget-object v2, p1, Lcom/android/internal/telephony/CallerInfo;->cnapName:Ljava/lang/String;
+    if-nez v4, :cond_a
 
     .line 1268
-    iget-object v3, p1, Lcom/android/internal/telephony/CallerInfo;->cnapName:Ljava/lang/String;
+    iget-object v2, p1, Lcom/android/internal/telephony/CallerInfo;->cnapName:Ljava/lang/String;
 
-    iput-object v3, p1, Lcom/android/internal/telephony/CallerInfo;->name:Ljava/lang/String;
+    .line 1269
+    iget-object v4, p1, Lcom/android/internal/telephony/CallerInfo;->cnapName:Ljava/lang/String;
+
+    iput-object v4, p1, Lcom/android/internal/telephony/CallerInfo;->name:Ljava/lang/String;
 
     move-object v7, v1
 
@@ -2926,20 +3006,23 @@
 
     move-object v0, v7
 
-    .line 1269
+    .line 1270
     goto/16 :goto_0
 
-    .line 1283
-    :cond_5
-    if-eqz p5, :cond_10
+    .line 1281
+    :cond_a
+    const/4 v3, 0x1
+
+    .line 1285
+    if-eqz p5, :cond_15
 
     invoke-virtual {p5}, Lcom/android/internal/telephony/Connection;->isIncoming()Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_10
+    if-eqz v4, :cond_15
 
-    .line 1287
+    .line 1289
     iget-object v2, p1, Lcom/android/internal/telephony/CallerInfo;->geoDescription:Ljava/lang/String;
 
     move-object v7, v1
@@ -2952,13 +3035,13 @@
 
     goto/16 :goto_0
 
-    .line 1296
-    :cond_6
-    sget v3, Lcom/android/internal/telephony/PhoneConstants;->PRESENTATION_ALLOWED:I
+    .line 1298
+    :cond_b
+    sget v4, Lcom/android/internal/telephony/PhoneConstants;->PRESENTATION_ALLOWED:I
 
-    if-eq p2, v3, :cond_7
+    if-eq p2, v4, :cond_c
 
-    .line 1300
+    .line 1302
     invoke-virtual {p0}, Lcom/android/phone/CallCard;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -2977,11 +3060,11 @@
 
     goto/16 :goto_0
 
-    .line 1304
-    :cond_7
+    .line 1306
+    :cond_c
     iget-object v2, p1, Lcom/android/internal/telephony/CallerInfo;->name:Ljava/lang/String;
 
-    .line 1306
+    .line 1308
     iget-object v1, p1, Lcom/android/internal/telephony/CallerInfo;->phoneLabel:Ljava/lang/String;
 
     move-object v7, v1
@@ -2992,163 +3075,175 @@
 
     goto/16 :goto_0
 
-    .line 1315
-    :cond_8
-    invoke-virtual {p0}, Lcom/android/phone/CallCard;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-static {v3, p2}, Lcom/android/phone/PhoneUtils;->getPresentationString(Landroid/content/Context;I)Ljava/lang/String;
-
-    move-result-object v3
-
-    goto/16 :goto_1
-
-    .line 1321
-    :cond_9
-    iget-object v4, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
-
-    invoke-virtual {v4, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    goto/16 :goto_2
-
-    .line 1338
-    :cond_a
-    if-eqz p1, :cond_b
-
-    iget v3, p1, Lcom/android/internal/telephony/CallerInfo;->photoResource:I
-
-    if-eqz v3, :cond_b
-
-    .line 1339
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
-
-    iget v3, p1, Lcom/android/internal/telephony/CallerInfo;->photoResource:I
-
-    invoke-static {v0, v3}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;I)V
-
-    goto/16 :goto_3
-
-    .line 1340
-    :cond_b
-    iget-object v3, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
-
-    invoke-static {v3, p1}, Lcom/android/phone/CallCard;->showCachedImage(Landroid/widget/ImageView;Lcom/android/internal/telephony/CallerInfo;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    .line 1341
-    if-nez v0, :cond_c
-
-    .line 1342
-    const-string v0, "CallCard"
-
-    const-string v3, "personPri is null. Just use Unknown picture."
-
-    invoke-static {v0, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1343
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
-
-    const v3, 0x7f020053
-
-    invoke-static {v0, v3}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;I)V
-
-    goto/16 :goto_3
-
-    .line 1344
-    :cond_c
-    iget-object v3, p0, Lcom/android/phone/CallCard;->mLoadingPersonUri:Landroid/net/Uri;
-
-    invoke-virtual {v0, v3}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    .line 1353
-    iput-object v0, p0, Lcom/android/phone/CallCard;->mLoadingPersonUri:Landroid/net/Uri;
-
-    .line 1356
-    iget-object v3, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
-
-    .line 1358
-    iget-object v3, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
-
-    const/4 v4, 0x4
-
-    invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 1361
-    const/4 v3, 0x0
-
+    .line 1317
+    :cond_d
     invoke-virtual {p0}, Lcom/android/phone/CallCard;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
-    new-instance v5, Lcom/android/phone/CallCard$AsyncLoadCookie;
+    invoke-static {v4, p2}, Lcom/android/phone/PhoneUtils;->getPresentationString(Landroid/content/Context;I)Ljava/lang/String;
 
-    iget-object v6, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+    move-result-object v4
 
-    invoke-direct {v5, v6, p1, p4}, Lcom/android/phone/CallCard$AsyncLoadCookie;-><init>(Landroid/widget/ImageView;Lcom/android/internal/telephony/CallerInfo;Lcom/android/internal/telephony/Call;)V
+    move-object v5, v4
 
-    invoke-static {v3, v4, v0, p0, v5}, Lcom/android/phone/ContactsAsyncHelper;->startObtainPhotoAsync(ILandroid/content/Context;Landroid/net/Uri;Lcom/android/phone/ContactsAsyncHelper$OnImageLoadCompleteListener;Ljava/lang/Object;)V
+    move-object v4, v2
 
-    .line 1366
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mHandler:Landroid/os/Handler;
+    move-object v2, v0
 
-    const/16 v3, 0x65
+    move-object v7, v1
 
-    invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
+    move v1, v3
 
-    .line 1367
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mHandler:Landroid/os/Handler;
+    move-object v3, v7
 
-    const/16 v3, 0x65
+    goto/16 :goto_1
 
-    const-wide/16 v4, 0x1f4
+    .line 1346
+    :cond_e
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v3, v4, v5}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {v0, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    goto/16 :goto_2
+
+    .line 1354
+    :cond_f
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto/16 :goto_3
 
-    .line 1377
-    :cond_d
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhotoDimEffect:Landroid/view/View;
-
-    const/16 v3, 0x8
-
-    invoke-static {v0, v3}, Lcom/android/phone/AnimationUtils$Fade;->hide(Landroid/view/View;I)V
-
-    goto/16 :goto_4
-
-    .line 1384
-    :cond_e
-    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
-
-    const/16 v2, 0x8
-
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
-
-    goto/16 :goto_5
-
-    .line 1391
-    :cond_f
+    .line 1361
+    :cond_10
     iget-object v0, p0, Lcom/android/phone/CallCard;->mLabel:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
+    goto/16 :goto_4
+
+    .line 1378
+    :cond_11
+    if-eqz p1, :cond_12
+
+    iget v0, p1, Lcom/android/internal/telephony/CallerInfo;->photoResource:I
+
+    if-eqz v0, :cond_12
+
+    .line 1379
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+
+    iget v1, p1, Lcom/android/internal/telephony/CallerInfo;->photoResource:I
+
+    invoke-static {v0, v1}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;I)V
+
+    goto/16 :goto_5
+
+    .line 1380
+    :cond_12
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+
+    invoke-static {v0, p1}, Lcom/android/phone/CallCard;->showCachedImage(Landroid/widget/ImageView;Lcom/android/internal/telephony/CallerInfo;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    .line 1381
+    if-nez v2, :cond_13
+
+    .line 1382
+    const-string v0, "CallCard"
+
+    const-string v1, "personPri is null. Just use Unknown picture."
+
+    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1383
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+
+    const v1, 0x7f020053
+
+    invoke-static {v0, v1}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;I)V
+
+    goto/16 :goto_5
+
+    .line 1384
+    :cond_13
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mLoadingPersonUri:Landroid/net/Uri;
+
+    invoke-virtual {v2, v0}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    .line 1393
+    iput-object v2, p0, Lcom/android/phone/CallCard;->mLoadingPersonUri:Landroid/net/Uri;
+
+    .line 1396
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
+
+    .line 1398
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 1401
+    const/4 v0, 0x0
+
+    invoke-virtual {p0}, Lcom/android/phone/CallCard;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    new-instance v3, Lcom/android/phone/CallCard$AsyncLoadCookie;
+
+    iget-object v4, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
+
+    invoke-direct {v3, v4, p1, p4}, Lcom/android/phone/CallCard$AsyncLoadCookie;-><init>(Landroid/widget/ImageView;Lcom/android/internal/telephony/CallerInfo;Lcom/android/internal/telephony/Call;)V
+
+    invoke-static {v0, v1, v2, p0, v3}, Lcom/android/phone/ContactsAsyncHelper;->startObtainPhotoAsync(ILandroid/content/Context;Landroid/net/Uri;Lcom/android/phone/ContactsAsyncHelper$OnImageLoadCompleteListener;Ljava/lang/Object;)V
+
+    .line 1406
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mHandler:Landroid/os/Handler;
+
+    const/16 v1, 0x65
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    .line 1407
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mHandler:Landroid/os/Handler;
+
+    const/16 v1, 0x65
+
+    const-wide/16 v2, 0x1f4
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+
+    goto/16 :goto_5
+
+    .line 1417
+    :cond_14
+    iget-object v0, p0, Lcom/android/phone/CallCard;->mPhotoDimEffect:Landroid/view/View;
+
+    const/16 v1, 0x8
+
+    invoke-static {v0, v1}, Lcom/android/phone/AnimationUtils$Fade;->hide(Landroid/view/View;I)V
+
     goto/16 :goto_6
 
-    :cond_10
+    :cond_15
     move-object v7, v1
 
     move-object v1, v2
@@ -3315,15 +3410,15 @@
 
     const/4 v3, 0x0
 
-    .line 1467
+    .line 1493
     const/4 v1, 0x0
 
-    .line 1471
+    .line 1497
     invoke-virtual {p1}, Lcom/android/internal/telephony/Call;->getState()Lcom/android/internal/telephony/Call$State;
 
     move-result-object v0
 
-    .line 1472
+    .line 1498
     sget-object v2, Lcom/android/phone/CallCard$2;->$SwitchMap$com$android$internal$telephony$Call$State:[I
 
     invoke-virtual {v0}, Lcom/android/internal/telephony/Call$State;->ordinal()I
@@ -3334,7 +3429,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1515
+    .line 1541
     invoke-virtual {p1}, Lcom/android/internal/telephony/Call;->getPhone()Lcom/android/internal/telephony/Phone;
 
     move-result-object v0
@@ -3343,54 +3438,54 @@
 
     move-result v0
 
-    .line 1516
+    .line 1542
     const/4 v2, 0x2
 
     if-ne v0, v2, :cond_3
 
-    .line 1517
+    .line 1543
     invoke-virtual {p1}, Lcom/android/internal/telephony/Call;->getLatestConnection()Lcom/android/internal/telephony/Connection;
 
     move-result-object v0
 
-    .line 1525
+    .line 1551
     :goto_0
     if-eqz v0, :cond_a
 
-    .line 1526
+    .line 1552
     invoke-virtual {v0}, Lcom/android/internal/telephony/Connection;->getUserData()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 1527
+    .line 1553
     instance-of v2, v0, Lcom/android/internal/telephony/CallerInfo;
 
     if-eqz v2, :cond_6
 
-    .line 1528
+    .line 1554
     check-cast v0, Lcom/android/internal/telephony/CallerInfo;
 
     move-object v2, v0
 
-    .line 1535
+    .line 1561
     :goto_1
     if-eqz v2, :cond_9
 
-    .line 1536
+    .line 1562
     iget v0, v2, Lcom/android/internal/telephony/CallerInfo;->photoResource:I
 
-    .line 1547
+    .line 1573
     :goto_2
     if-nez v0, :cond_8
 
-    .line 1548
+    .line 1574
     invoke-static {p1}, Lcom/android/phone/PhoneUtils;->isConferenceCall(Lcom/android/internal/telephony/Call;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 1549
+    .line 1575
     iget-object v1, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
 
     invoke-static {v1, v2}, Lcom/android/phone/CallCard;->showCachedImage(Landroid/widget/ImageView;Lcom/android/internal/telephony/CallerInfo;)Z
@@ -3407,71 +3502,71 @@
 
     if-ne v1, v7, :cond_0
 
-    .line 1551
+    .line 1577
     iget-object v1, p0, Lcom/android/phone/CallCard;->mPhotoTracker:Lcom/android/phone/ContactsAsyncHelper$ImageTracker;
 
     invoke-virtual {v1}, Lcom/android/phone/ContactsAsyncHelper$ImageTracker;->getPhotoUri()Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 1552
+    .line 1578
     if-nez v1, :cond_7
 
-    .line 1553
+    .line 1579
     const-string v1, "CallCard"
 
     const-string v2, "photoUri became null. Show default avatar icon"
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1554
+    .line 1580
     iget-object v1, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
 
     const v2, 0x7f020053
 
     invoke-static {v1, v2}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;I)V
 
-    .line 1566
+    .line 1592
     :goto_3
     iget-object v1, p0, Lcom/android/phone/CallCard;->mPhotoTracker:Lcom/android/phone/ContactsAsyncHelper$ImageTracker;
 
     invoke-virtual {v1, v8}, Lcom/android/phone/ContactsAsyncHelper$ImageTracker;->setPhotoState(I)V
 
-    .line 1578
+    .line 1604
     :cond_0
     :goto_4
     if-eqz v0, :cond_1
 
-    .line 1580
+    .line 1606
     iget-object v1, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
 
     invoke-static {v1, v0}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;I)V
 
-    .line 1582
+    .line 1608
     iget-object v0, p0, Lcom/android/phone/CallCard;->mPhotoTracker:Lcom/android/phone/ContactsAsyncHelper$ImageTracker;
 
     invoke-virtual {v0, v7}, Lcom/android/phone/ContactsAsyncHelper$ImageTracker;->setPhotoState(I)V
 
-    .line 1584
+    .line 1610
     :cond_1
     :goto_5
     return-void
 
-    .line 1477
+    .line 1503
     :pswitch_0
     invoke-virtual {p1}, Lcom/android/internal/telephony/Call;->getEarliestConnection()Lcom/android/internal/telephony/Connection;
 
     move-result-object v0
 
-    .line 1480
+    .line 1506
     if-eqz v0, :cond_b
 
-    .line 1481
+    .line 1507
     invoke-virtual {v0}, Lcom/android/internal/telephony/Connection;->getDisconnectCause()Lcom/android/internal/telephony/Connection$DisconnectCause;
 
     move-result-object v0
 
-    .line 1482
+    .line 1508
     sget-object v2, Lcom/android/internal/telephony/Connection$DisconnectCause;->BUSY:Lcom/android/internal/telephony/Connection$DisconnectCause;
 
     if-eq v0, v2, :cond_2
@@ -3480,13 +3575,13 @@
 
     if-ne v0, v2, :cond_b
 
-    .line 1484
+    .line 1510
     :cond_2
     const v0, 0x7f02004e
 
     goto :goto_4
 
-    .line 1518
+    .line 1544
     :cond_3
     if-eq v0, v9, :cond_4
 
@@ -3494,7 +3589,7 @@
 
     if-ne v0, v2, :cond_5
 
-    .line 1520
+    .line 1546
     :cond_4
     invoke-virtual {p1}, Lcom/android/internal/telephony/Call;->getEarliestConnection()Lcom/android/internal/telephony/Connection;
 
@@ -3502,7 +3597,7 @@
 
     goto :goto_0
 
-    .line 1522
+    .line 1548
     :cond_5
     new-instance v1, Ljava/lang/IllegalStateException;
 
@@ -3528,13 +3623,13 @@
 
     throw v1
 
-    .line 1529
+    .line 1555
     :cond_6
     instance-of v2, v0, Lcom/android/phone/PhoneUtils$CallerInfoToken;
 
     if-eqz v2, :cond_a
 
-    .line 1530
+    .line 1556
     check-cast v0, Lcom/android/phone/PhoneUtils$CallerInfoToken;
 
     iget-object v0, v0, Lcom/android/phone/PhoneUtils$CallerInfoToken;->currentInfo:Lcom/android/internal/telephony/CallerInfo;
@@ -3543,20 +3638,20 @@
 
     goto/16 :goto_1
 
-    .line 1559
+    .line 1585
     :cond_7
     iget-object v4, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
 
     invoke-virtual {v4, v3}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
-    .line 1561
+    .line 1587
     iget-object v4, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
 
     const/4 v5, 0x4
 
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1562
+    .line 1588
     invoke-virtual {p0}, Lcom/android/phone/CallCard;->getContext()Landroid/content/Context;
 
     move-result-object v4
@@ -3571,13 +3666,13 @@
 
     goto :goto_3
 
-    .line 1571
+    .line 1597
     :cond_8
     iget-object v1, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
 
     invoke-static {v1, v0}, Lcom/android/phone/CallCard;->showImage(Landroid/widget/ImageView;I)V
 
-    .line 1572
+    .line 1598
     iget-object v0, p0, Lcom/android/phone/CallCard;->mPhotoTracker:Lcom/android/phone/ContactsAsyncHelper$ImageTracker;
 
     invoke-virtual {v0, v8}, Lcom/android/phone/ContactsAsyncHelper$ImageTracker;->setPhotoState(I)V
@@ -3599,7 +3694,7 @@
 
     goto :goto_4
 
-    .line 1472
+    .line 1498
     :pswitch_data_0
     .packed-switch 0x4
         :pswitch_0
@@ -3638,7 +3733,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 1730
+    .line 1756
     invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 
     move-result v0
@@ -3647,64 +3742,64 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 1731
+    .line 1757
     iget-object v0, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
 
     invoke-direct {p0, p1, v0}, Lcom/android/phone/CallCard;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;Landroid/view/View;)V
 
-    .line 1732
+    .line 1758
     iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
 
     invoke-direct {p0, p1, v0}, Lcom/android/phone/CallCard;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;Landroid/view/View;)V
 
-    .line 1748
+    .line 1774
     :cond_0
     :goto_0
     return v2
 
-    .line 1736
+    .line 1762
     :cond_1
     iget-object v0, p0, Lcom/android/phone/CallCard;->mCallStateLabel:Landroid/widget/TextView;
 
     invoke-direct {p0, p1, v0}, Lcom/android/phone/CallCard;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;Landroid/view/View;)V
 
-    .line 1737
+    .line 1763
     iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoto:Landroid/widget/ImageView;
 
     invoke-direct {p0, p1, v0}, Lcom/android/phone/CallCard;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;Landroid/view/View;)V
 
-    .line 1738
+    .line 1764
     iget-object v0, p0, Lcom/android/phone/CallCard;->mName:Landroid/widget/TextView;
 
     invoke-direct {p0, p1, v0}, Lcom/android/phone/CallCard;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;Landroid/view/View;)V
 
-    .line 1739
+    .line 1765
     iget-object v0, p0, Lcom/android/phone/CallCard;->mPhoneNumber:Landroid/widget/TextView;
 
     invoke-direct {p0, p1, v0}, Lcom/android/phone/CallCard;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;Landroid/view/View;)V
 
-    .line 1740
+    .line 1766
     iget-object v0, p0, Lcom/android/phone/CallCard;->mLabel:Landroid/widget/TextView;
 
     invoke-direct {p0, p1, v0}, Lcom/android/phone/CallCard;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;Landroid/view/View;)V
 
-    .line 1742
+    .line 1768
     iget-object v0, p0, Lcom/android/phone/CallCard;->mSecondaryCallName:Landroid/widget/TextView;
 
     if-eqz v0, :cond_2
 
-    .line 1743
+    .line 1769
     iget-object v0, p0, Lcom/android/phone/CallCard;->mSecondaryCallName:Landroid/widget/TextView;
 
     invoke-direct {p0, p1, v0}, Lcom/android/phone/CallCard;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;Landroid/view/View;)V
 
-    .line 1745
+    .line 1771
     :cond_2
     iget-object v0, p0, Lcom/android/phone/CallCard;->mSecondaryCallPhoto:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    .line 1746
+    .line 1772
     iget-object v0, p0, Lcom/android/phone/CallCard;->mSecondaryCallPhoto:Landroid/widget/ImageView;
 
     invoke-direct {p0, p1, v0}, Lcom/android/phone/CallCard;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;Landroid/view/View;)V
@@ -3718,17 +3813,17 @@
     .prologue
     const/16 v1, 0x8
 
-    .line 1711
+    .line 1737
     iget-object v0, p0, Lcom/android/phone/CallCard;->mPrimaryCallInfo:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 1712
+    .line 1738
     iget-object v0, p0, Lcom/android/phone/CallCard;->mSecondaryCallInfo:Landroid/view/ViewStub;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewStub;->setVisibility(I)V
 
-    .line 1713
+    .line 1739
     return-void
 .end method
 
@@ -4270,13 +4365,13 @@
     .parameter "hintColorResId"
 
     .prologue
-    .line 1720
+    .line 1746
     iput p1, p0, Lcom/android/phone/CallCard;->mIncomingCallWidgetHintTextResId:I
 
-    .line 1721
+    .line 1747
     iput p2, p0, Lcom/android/phone/CallCard;->mIncomingCallWidgetHintColorResId:I
 
-    .line 1722
+    .line 1748
     return-void
 .end method
 

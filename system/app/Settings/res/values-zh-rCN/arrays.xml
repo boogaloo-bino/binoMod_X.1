@@ -294,8 +294,8 @@
         <item>2G/仅 3G/3G+2G</item>
     </string-array>
     <string-array name="entries_screentimeout_widget">
-        <item>15 秒/1 分钟/5 分钟</item>
-        <item>30 秒/2 分钟/5 分钟</item>
+        <item>15 秒 | 1 分钟 | 5 分钟</item>
+        <item>30 秒 | 2 分钟 | 5 分钟</item>
     </string-array>
     <string-array name="entries_flash_widget">
         <item>正常</item>

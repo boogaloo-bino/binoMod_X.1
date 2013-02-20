@@ -562,12 +562,12 @@
     <string name="description_target_decline">拒绝</string>
     <string name="voicemail_notification_vibrate_when_title">振动</string>
     <string name="voicemail_notification_vibarte_when_dialog_title">振动</string>
-    <string name="voicemail_notification_ringtone_title">铃声</string>
-    <string name="voicemail_notification_vibrate_when_default">从不</string>
+    <string name="voicemail_notification_ringtone_title">提示音</string>
+    <string name="default_notification_description">默认提示音 (%1$s)</string>
     <string name="ringtone_title">手机铃声</string>
     <string name="vibrate_on_ring_title">响铃时振动</string>
     <string name="dtmf_tone_enable_title">拨号键盘触摸音效</string>
-    <string name="preference_category_ringtone">铃声</string>
+    <string name="preference_category_ringtone">铃声和振动</string>
     <string name="noise_suppression_title">噪音镇压</string>
     <string name="noise_suppression_summary">呼叫时启用噪音镇压</string>
     <string name="advanced_setting">高级设置</string>
@@ -583,12 +583,7 @@
     <string name="national_roaming_disable">在国内漫游时连接到数据服务</string>
     <string name="perm_change_mobile_network">切换移动网络 (2G/3G)</string>
     <string name="perm_change_mobile_network_desc">获得该权限的应用程序可以随时在 2G/3G 移动数据网络之间切换. 3G 网络的速度会更快, 但也会消耗更多的电量并且可能花费更多的钱.</string>
-    <string name="ring_delay_title">铃声时延</string>
-    <string name="ring_delay_summary">选择来电铃声时延值</string>
-    <string name="exit_to_home_screen_title">挂电话时直接返回桌面</string>
-    <string name="exit_to_home_screen_summary">挂电话时直接返回桌面而不是通话记录</string>
-    <string name="vibration_title">来电振动提示</string>
-    <string name="vibrate_outgoing_sum">当对方接听时震动.</string>
-    <string name="vibrate_hangup_sum">通话结束时震动.</string>
-    <string name="vibrate_call_waiting_sum">当呼叫等待时震动通知.</string>
+    <string name="flip_action_title">翻转动作</string>
+    <string name="flip_action_dialog_title">翻转动作</string>
+    <string name="flip_action_summary">翻转手机将 %s</string>
 </resources>
