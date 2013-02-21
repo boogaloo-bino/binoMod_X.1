@@ -621,6 +621,8 @@
     <string name="sound_effects_enable_title">触摸提示音</string>
     <string name="lock_sounds_enable_title">锁屏提示音</string>
     <string name="haptic_feedback_enable_title">触摸时振动</string>
+    <string name="volume_adjust_sounds_enable_title">音量调节声音</string>
+    <string name="volume_adjust_sounds_enable_summary">音量键调节音量时播放声音</string>
     <string name="audio_record_proc_title">降噪</string>
     <string name="volume_media_description">音乐、视频、游戏和其他媒体</string>
     <string name="volume_ring_description">铃声和通知</string>
@@ -2327,4 +2329,6 @@ PIN 可能不正确。"</string>
     <string name="auto_brightness_menu_edit_lux">环境亮度范围</string>
     <string name="auto_brightness_menu_split">分离</string>
     <string name="auto_brightness_menu_remove">删除</string>
+    <string name="advanced_reboot_title">高级重启</string>
+    <string name="advanced_reboot_summary">当解锁时，在电源菜单的选项里，重新启动到恢复模式或引导模式</string>
 </resources>

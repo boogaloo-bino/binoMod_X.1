@@ -681,6 +681,8 @@ Phone setup can require significant network activity."</string>
     <string name="sound_effects_enable_title">Touch sounds</string>
     <string name="lock_sounds_enable_title">Screen lock sound</string>
     <string name="haptic_feedback_enable_title">Vibrate on touch</string>
+    <string name="volume_adjust_sounds_enable_title">Volume adjustment sound</string>
+    <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with volume rocker</string>
     <string name="audio_record_proc_title">Noise cancellation</string>
     <string name="volume_media_description">Music, video, games, &amp; other media</string>
     <string name="volume_ring_description">Ringtone &amp; notifications</string>
@@ -2425,4 +2427,6 @@ In selecting 'OK' below, you acknowledge this warning and waive, indemnify and h
     <string name="auto_brightness_menu_edit_lux">Ambient brightness range</string>
     <string name="auto_brightness_menu_split">Split</string>
     <string name="auto_brightness_menu_remove">Remove</string>
+    <string name="advanced_reboot_title">Advanced reboot</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery or bootloader</string>
 </resources>
